@@ -1,0 +1,10 @@
+{
+  "expo": {
+    "scheme": "acme",
+    "web": {
+      "bundler": "metro"
+    },
+    "name": "react-nativa-exe1",
+    "slug": "react-nativa-exe1"
+  }
+}

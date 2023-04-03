@@ -10,16 +10,16 @@ import useFetch from "../../../hook/useFetch";
 const Nearbyjobs = () => {
   const router = useRouter();
   const { data, isLoading, error } = useFetch("search", {
-    query: "React Native developer",
+    query: "React Native",
     num_pages: "1",
   });
 
   return (
     <View style={styles.container}>
       <View style={styles.header}>
-        <Text style={styles.headerTitle}>Nearby jobs</Text>
+        <Text style={styles.headerTitle}>Рабочие места в Вашем городе</Text>
         <TouchableOpacity>
-          <Text style={styles.headerBtn}>Show all</Text>
+          <Text style={styles.headerBtn}>Все</Text>
         </TouchableOpacity>
       </View>
 
@@ -27,7 +27,7 @@ const Nearbyjobs = () => {
         {isLoading ? (
           <ActivityIndicator size='large' color={COLORS.primary} />
         ) : error ? (
-          <Text>Something went wrong</Text>
+          <Text>Что-то пошло не так</Text>
         ) : (
           data?.map((job) => (
             <NearbyJobCard

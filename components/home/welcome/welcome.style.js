@@ -10,12 +10,14 @@ const styles = StyleSheet.create({
     fontFamily: FONT.regular,
     fontSize: SIZES.large,
     color: COLORS.secondary,
+    textAlign: "center",
   },
   welcomeMessage: {
     fontFamily: FONT.bold,
     fontSize: SIZES.xLarge,
     color: COLORS.primary,
     marginTop: 2,
+    textAlign: "center",
   },
   searchContainer: {
     justifyContent: "center",

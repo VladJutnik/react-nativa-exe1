@@ -26,7 +26,7 @@ const JobSearch = () => {
                 method: "GET",
                 url: `https://jsearch.p.rapidapi.com/search`,
                 headers: {
-                    "X-RapidAPI-Key": '',
+                    "X-RapidAPI-Key": '288ce7bdb7msh76191e80e65ca35p14bfd6jsn921e11d324cd',
                     "X-RapidAPI-Host": "jsearch.p.rapidapi.com",
                 },
                 params: {
@@ -90,13 +90,13 @@ const JobSearch = () => {
                     <>
                         <View style={styles.container}>
                             <Text style={styles.searchTitle}>{params.id}</Text>
-                            <Text style={styles.noOfSearchedJobs}>Job Opportunities</Text>
+                            <Text style={styles.noOfSearchedJobs}>Подходящие вакансии</Text>
                         </View>
                         <View style={styles.loaderContainer}>
                             {searchLoader ? (
                                 <ActivityIndicator size='large' color={COLORS.primary} />
                             ) : searchError && (
-                                <Text>Oops something went wrong</Text>
+                                <Text>Оуу Что-то пошло не так</Text>
                             )}
                         </View>
                     </>
